@@ -6,6 +6,13 @@ h1 {
   text-align: center;
 }
 
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 button,
 .hoverable {
   margin: 20px;
@@ -87,4 +94,11 @@ button,
   color: white;
   padding: 20px;
   cursor: pointer;
+  text-align: center;
+}
+
+img {
+  width: 50px;
+  margin-right: 20px;
+  position: absolute;
 }
