@@ -75,7 +75,11 @@ function App() {
     </div>
   );
 
-  const IconBTN = ({ data = "Welcome, Have Fun" }: { data?: string }) => (
+  const IconBTN = ({
+    data = "Welcome, Have Fun Learning!",
+  }: {
+    data?: string;
+  }) => (
     <span data-message={data} className="icon" onClick={handleClick}>
       <Icon data={data} />
     </span>
