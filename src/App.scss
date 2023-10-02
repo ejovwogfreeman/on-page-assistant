@@ -1,0 +1,163 @@
+.ball {
+  transition: transform 0.5s ease-in-out;
+  .clip {
+    width: 110px;
+    overflow: hidden;
+    border: 2px solid black;
+    border-radius: 100px;
+  }
+  .assistantMsg {
+    position: absolute;
+    bottom: 0;
+    background-color: white;
+    padding: 8px;
+    border: 1px solid;
+    border-radius: 8px;
+    font-size: 12px;
+    right: 116px;
+    width: 178px;
+  }
+}
+
+.App {
+  min-height: 100dvh;
+  font-family: "Raleway", sans-serif;
+
+  .nav {
+    padding-block: 30px;
+
+    &Wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navList {
+      display: flex;
+      gap: 34px;
+      cursor: pointer;
+    }
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-inline: auto;
+  }
+
+  .btn {
+    border-radius: 12px;
+    border: 1px solid
+      linear-gradient(45deg, rgb(98, 170, 143) 0%, rgb(87, 96, 220) 100%);
+    background: linear-gradient(
+      45deg,
+      rgb(98, 170, 143) 0%,
+      rgb(87, 96, 220) 100%
+    );
+    color: white;
+    padding: 20px 45px;
+    // cursor: pointer;
+  }
+
+  .icon {
+    border-radius: 50px;
+    border: 1px solid #fff;
+    background: linear-gradient(
+      45deg,
+      rgb(98, 170, 143) 0%,
+      rgb(87, 96, 220) 100%
+    );
+    padding: 10px;
+    display: grid;
+    place-items: center;
+    transition: transform 0.5s ease-in-out;
+    cursor: pointer;
+  }
+
+  .heroSection {
+    margin-top: 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    gap: 24px;
+    padding-bottom: 50px;
+
+    .content {
+      margin-top: 80px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .heroTitle {
+      color: linear-gradient(
+        45deg,
+        rgba(34, 164, 116, 1) 0%,
+        rgba(41, 47, 143, 1) 100%
+      );
+      font-size: 50px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+  }
+
+  .flexBTN {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .cardsSection {
+    background-color: rgba(0, 0, 0, 0.1);
+    min-height: 600px;
+    margin-top: 30px;
+    padding: 70px 20px;
+
+    .hairCards {
+      min-height: 300px;
+
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+
+      .hairCard {
+        max-width: 390px;
+        background-color: white;
+        border-radius: 30px;
+        overflow: hidden;
+
+        h3 {
+          color: linear-gradient(
+            45deg,
+            rgba(34, 164, 116, 1) 0%,
+            rgba(41, 47, 143, 1) 100%
+          );
+          font-size: 24px;
+          text-transform: capitalize;
+        }
+
+        .info {
+          display: flex;
+          justify-content: space-between;
+          padding-inline: 24px;
+          padding-block: 16px;
+          align-items: center;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  background-color: #0a0807;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer p {
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  font-family: "Raleway", sans-serif;
+}
