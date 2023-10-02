@@ -75,7 +75,7 @@ function App() {
     </div>
   );
 
-  const IconBTN = ({ data = "Explain Button" }: { data?: string }) => (
+  const IconBTN = ({ data = "Welcome, Have Fun" }: { data?: string }) => (
     <span data-message={data} className="icon" onClick={handleClick}>
       <Icon data={data} />
     </span>
@@ -96,7 +96,7 @@ function App() {
 
             <div className="flexBTN">
               <button className="btn" data-assist="This is an explain button">
-                Explain
+                Welcome
               </button>
               <IconBTN />
             </div>
